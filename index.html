@@ -7,12 +7,12 @@
     <title>Booksy</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <script type="module" crossorigin src="/codeV1be-js/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/codeV1be-js/assets/vendor-BYj0TJZP.js">
+    <link rel="modulepreload" crossorigin href="/codeV1be-js/assets/vendor-D_unAB-g.js">
     <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/vendor-CYg8QLwk.css">
-    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-DTEupmYD.css">
+    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-DFRqYRBj.css">
   </head>
   <body>
     <header class="header">
@@ -63,9 +63,168 @@
 </section>
 
       
-      <section class="events" id="events">
+      <section class="section" id="events">
   <div class="container">
-    
+    <p class="section-name">Events</p>
+    <h2 class="events-title">Upcoming Events at Booksy</h2>
+    <p class="events-text">
+      Discover readings, workshops, and bookish gatherings — online and offline.
+      Everyone’s welcome.
+    </p>
+
+    <!-- Swiper контейнер -->
+    <div class="swiper events-swiper">
+      <ul class="swiper-wrapper events-list">
+        <!-- slide 1 -->
+        <li class="swiper-slide events-item">
+          <picture class="events-image">
+            <source
+              srcset="/codeV1be-js/assets/events-1-1x-34hDWbsR.jpg 1x, /codeV1be-js/assets/events-1-2x-DuMevtw0.jpg 2x"
+            />
+            <img
+              src="/codeV1be-js/assets/events-1-1x-34hDWbsR.jpg"
+              width="343"
+              height="248"
+              alt="Cozy Book Club"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
+          <div class="events-content-wrapper">
+            <div class="section-register">
+              <p class="events-description">
+                Cozy Book Club — “The Midnight Library”
+              </p>
+              <div class="event-meta">
+                <span class="event-location">In-store </span>
+                <time datetime="2025-06-5T18:30">| June 5, 6:30 PM</time>
+              </div>
+              <p class="events-content">
+                Join us for an evening of tea, thoughtful conversation, and
+                shared reflections as we dive into Matt Haig’s bestseller.
+              </p>
+            </div>
+            <button
+              class="event-btn btn-secondary events-btn event-register-btn"
+              data-event="Cozy Book Club — “The Midnight Library”"
+              type="button"
+            >
+              Register
+              <svg class="icon-chevron-right" width="25" height="25">
+                <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <!-- slide 2 -->
+        <li class="swiper-slide events-item">
+          <picture class="events-image">
+            <source
+              srcset="/codeV1be-js/assets/events-2-1x-C5xdLRsk.jpg 1x, /codeV1be-js/assets/events-2-2x-D0MeyMfQ.jpg 2x"
+            />
+            <img
+              src="/codeV1be-js/assets/events-2-1x-C5xdLRsk.jpg"
+              width="343"
+              height="248"
+              loading="lazy"
+              decoding="async"
+              alt="Book Cover Design Workshop"
+            />
+          </picture>
+          <div class="events-content-wrapper">
+            <div>
+              <p class="events-description">Book Cover Design Workshop</p>
+              <div class="event-meta">
+                <span class="event-location">Online </span>
+                <time datetime="2025-06-12T19:00">| June 12, 7:00 PM</time>
+              </div>
+              <p class="events-content">
+                A hands-on session for aspiring designers and curious readers.
+                Learn what makes a cover stand out — from concept to print.
+              </p>
+            </div>
+            <button
+              class="event-btn btn-secondary events-btn event-register-btn"
+              data-event="Book Cover Design Workshop"
+              type="button"
+            >
+              Register
+              <svg class="icon-chevron-right" width="25" height="25">
+                <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <!-- slide 3 -->
+        <li class="swiper-slide events-item">
+          <picture class="events-image">
+            <source
+              srcset="/codeV1be-js/assets/events-3-1x-CvqyK9M2.jpg 1x, /codeV1be-js/assets/events-3-2x-x63YPPxG.jpg 2x"
+            />
+            <img
+              src="/codeV1be-js/assets/events-3-1x-CvqyK9M2.jpg"
+              width="343"
+              height="248"
+              loading="lazy"
+              decoding="async"
+              alt="Children’s Story Hour"
+            />
+          </picture>
+          <div class="events-content-wrapper">
+            <div>
+              <p class="events-description">Children’s Story Hour</p>
+              <div class="event-meta">
+                <span class="event-location">Online </span>
+                <time datetime="2025-06-12T19:00"> | June 12, 7:00 PM</time>
+              </div>
+              <p class="events-content">
+                A magical morning of stories, games, and imagination for our
+                youngest book lovers (ages 4–8).
+              </p>
+            </div>
+            <button
+              class="event-btn btn-secondary events-btn event-register-btn"
+              data-event="Children’s Story Hour"
+              type="button"
+            >
+              Register
+              <svg class="icon-chevron-right" width="25" height="25">
+                <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Контейнер для стрілок і крапочок -->
+      <div class="events-controls-wrapper">
+        <div class="events-buttons-wrapper">
+          <button
+            class="events-swiper-btn-prev arrow"
+            type="button"
+            aria-label="Previous slide"
+            disabled
+          >
+            <svg class="svg" width="25" height="25">
+              <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-left-arrow-alt"></use>
+            </svg>
+          </button>
+          <button
+            class="events-swiper-btn-next arrow"
+            type="button"
+            aria-label="Next slide"
+          >
+            <svg class="svg" width="25" height="25">
+              <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-right-arrow-alt"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="swiper-pagination events-pagination"></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -83,16 +242,16 @@
     </div>
     <picture class="article-img">
       <source
-        srcset="/codeV1be-js/assets/article1x-DyeK7XOC.jpg, /codeV1be-js/assets/article2x-Dn-dGV3u.jpg"
+        srcset="/codeV1be-js/assets/article1x-DyeK7XOC.jpg 1x, /codeV1be-js/assets/article2x-Dn-dGV3u.jpg 2x"
         media="(min-width: 1440px)"
       />
       <source
-        srcset="/codeV1be-js/assets/article-tab1x-ZJnl_4ms.jpg, /codeV1be-js/assets/article-tab2x-9ZTfvqVb.jpg"
+        srcset="/codeV1be-js/assets/article-tab1x-ZJnl_4ms.jpg 1x, /codeV1be-js/assets/article-tab2x-9ZTfvqVb.jpg 2x"
         media="(min-width:768px)"
       />
 
       <source
-        srcset="/codeV1be-js/assets/article-mob1x-1uiDYtdh.jpg, /codeV1be-js/assets/article-mob2x-OoE3uutp.jpg"
+        srcset="/codeV1be-js/assets/article-mob1x-1uiDYtdh.jpg 1x, /codeV1be-js/assets/article-mob2x-OoE3uutp.jpg 2x"
         media="(max-width: 767px)"
       />
       <img src="/codeV1be-js/assets/article1x-DyeK7XOC.jpg" alt="man in the library" />
@@ -111,7 +270,7 @@
   <li class="contact-item">
     <div class="contact-label">
       <svg class="icon" width="20" height="17">
-        <use href="/codeV1be-js/assets/icons-DTuBzj-n.svg#icon-email-black-18dp-1"></use>
+        <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-email-black-18dp-1"></use>
       </svg>
       <span>Email:</span>
     </div>
@@ -121,7 +280,7 @@
   <li class="contact-item">
     <div class="contact-label">
       <svg class="icon" width="19" height="20">
-        <use href="/codeV1be-js/assets/icons-DTuBzj-n.svg#icon-phone-black-18dp-1"></use>
+        <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-phone-black-18dp-1"></use>
       </svg>
       <span>Phone:</span>
     </div>
@@ -131,7 +290,7 @@
   <li class="contact-item">
     <div class="contact-label">
       <svg class="icon" width="16" height="21">
-        <use href="/codeV1be-js/assets/icons-DTuBzj-n.svg#icon-icon"></use>
+        <use href="/codeV1be-js/assets/icons-CU_0Mpwd.svg#icon-icon"></use>
       </svg>
       <span>Office:</span>
     </div>
@@ -215,11 +374,11 @@
   </div>
 </footer>
 
-    
-  <div class="backdrop" id="modal-backdrop"></div>
+    <!-- Modal will be implemented by another team member -->
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-
+    <script src="./js/events.js"></script>
   </body>
 </html>
