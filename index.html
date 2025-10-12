@@ -8,77 +8,57 @@
     <script type="module" crossorigin src="/codeV1be-js/index.js"></script>
     <link rel="modulepreload" crossorigin href="/codeV1be-js/assets/vendor-BYj0TJZP.js">
     <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/vendor-CYg8QLwk.css">
-    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-OndHpG0i.css">
+    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-D31uUCFK.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <nav class="header-nav">
-      <a href="./index.html" class="logo header-logo">
-        <img class="logo-icon" src="/codeV1be-js/assets/footer-logo-CtSo4irx.svg" alt="Booksy logo" />
+      <a href="./index.html" class="logo hidden">
+        <img class="logo-icon" src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg" alt="Booksy logo" />
       </a>
+
       <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#books">Books</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#events">Events</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="№location">Location</a>
-        </li>
+        <li><a class="header-nav-link" href="./index.html">Home</a></li>
+        <li><a class="header-nav-link" href="#books">Books</a></li>
+        <li><a class="header-nav-link" href="#feedbacks">Feedbacks</a></li>
+        <li><a class="header-nav-link" href="#events">Events</a></li>
+        <li><a class="header-nav-link" href="#location">Location</a></li>
       </ul>
 
       <button class="menu-open-btn" type="button" data-menu-open>
-        X
-        <!-- <svg class="menu-icon" width="24" height="24">
-          <use  href="./img/icons.svg#icon-menu-burger"></use>
-        </svg> -->
+        <svg class="menu-icon" width="24" height="24">
+          <use href="data:image/svg+xml,%3csvg%20width='26'%20height='24'%20viewBox='0%200%2026%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.6665%206H21.3332V8H4.6665V6ZM8.83317%2011H21.3332V13H8.83317V11ZM14.0415%2016H21.3332V18H14.0415V16Z'%20fill='%230B0500'/%3e%3c/svg%3e"></use>
+        </svg>
       </button>
-      <!-- menu.hidden -->
-      <div class="menu hidden">
-        <div class="container menu-container">
-          <div class="menu-header">
-            <a href="./index.html">
-              <img src="/codeV1be-js/assets/footer-logo-CtSo4irx.svg" alt="Booksy logo">
-            </a>
-            <button class="close-menu-btn" type="button">
-              <svg class="menu-close-icon" width="24" height="24">
-                <use href="./img/icon-close-menu.svg"></use>
-              </svg>
-            </button>
-          </div>
-          <nav class="menu-nav">
-            <ul class="menu-nav-list">
-              <li class="nav-item">
-                <a class="nav-link" href="./">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Books</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Feedbacks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Location</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      </a>
     </nav>
   </div>
 </header>
+
+<div class="menu">
+  <div class="menu-container">
+    <div class="menu-nav">
+      <a href="./index.html">
+        <img class="logo-icon" src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg" alt="Booksy logo">
+      </a>
+      <button class="close-menu-btn" type="button">
+        <svg class="menu-close-icon" width="24" height="24">
+          <use href="./img/icon-close-menu.svg"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="menu-nav">
+      <ul class="menu-nav-list">
+        <li><a class="nav-link" href="./">Home</a></li>
+        <li><a class="nav-link" href="">Books</a></li>
+        <li><a class="nav-link" href="">Feedbacks</a></li>
+        <li><a class="nav-link" href="">Events</a></li>
+        <li><a class="nav-link" href="">Location</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
 
     <main>
@@ -228,7 +208,7 @@
         >
           Categories
           <svg class="books-arrow-icon" width="24" height="24">
-            <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-arrow"></use>
+            <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-arrow"></use>
           </svg>
         </button>
         <div class="books-categories-menu" data-category-list>
@@ -296,7 +276,7 @@
             >
               Register
               <svg class="icon-chevron-right" width="25" height="25">
-                <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-chevron-right"></use>
+                <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-chevron-right"></use>
               </svg>
             </button>
           </div>
@@ -336,7 +316,7 @@
             >
               Register
               <svg class="icon-chevron-right" width="25" height="25">
-                <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-chevron-right"></use>
+                <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-chevron-right"></use>
               </svg>
             </button>
           </div>
@@ -376,7 +356,7 @@
             >
               Register
               <svg class="icon-chevron-right" width="25" height="25">
-                <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-chevron-right"></use>
+                <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-chevron-right"></use>
               </svg>
             </button>
           </div>
@@ -394,7 +374,7 @@
             disabled
           >
             <svg class="svg" width="25" height="25">
-              <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-left-arrow-alt"></use>
+              <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-left-arrow-alt"></use>
             </svg>
           </button>
           <button
@@ -403,7 +383,7 @@
             aria-label="Next slide"
           >
             <svg class="svg" width="25" height="25">
-              <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-right-arrow-alt"></use>
+              <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-right-arrow-alt"></use>
             </svg>
           </button>
         </div>
@@ -465,7 +445,7 @@
               width="20"
               height="17"
             >
-              <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-email-black-18dp-1"></use>
+              <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-email-black-18dp-1"></use>
             </svg>
             <div class="contact-item-inner">
               <p class="contact-label">Email:</p>
@@ -483,7 +463,7 @@
               width="19"
               height="20"
             >
-              <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-phone-black-18dp-1"></use>
+              <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-phone-black-18dp-1"></use>
             </svg>
             <div class="contact-item-inner">
               <p class="contact-label">Phone:</p>
@@ -501,7 +481,7 @@
               width="16"
               height="21"
             >
-              <use href="/codeV1be-js/assets/icons-79dtbaha.svg#icon-icon"></use>
+              <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-icon"></use>
             </svg>
             <div class="contact-item-inner">
               <p class="contact-label">Office:</p>
