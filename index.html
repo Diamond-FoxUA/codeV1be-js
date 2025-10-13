@@ -8,81 +8,57 @@
     <script type="module" crossorigin src="/codeV1be-js/index.js"></script>
     <link rel="modulepreload" crossorigin href="/codeV1be-js/assets/vendor-DQb83OiD.js">
     <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-s5e_oqyM.css">
+    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-CkcfNWsC.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
     <nav class="header-nav">
       <a href="./index.html" class="logo">
-        <img
-          class="logo-icon"
-          src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg"
-          alt="Booksy logo"
-        />
+        <svg class="logo-icon" width="80" height="24">
+          <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-book"></use>
+        </svg>
       </a>
-      
-      <ul class="header-nav-list">
-        <li class="nav-item">
-          <a class="header-nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="header-nav-link" href="#books">Books</a>
-        </li>
-        <li class="nav-item">
-          <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
-        </li>
-        <li class="nav-item">
-          <a class="header-nav-link" href="#events">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="header-nav-link" href="#location">Location</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="menu-open-btn" type="button" data-menu-open>
-      <svg class="menu-icon" width="24" height="24">
-        <use href="data:image/svg+xml,%3csvg%20width='26'%20height='24'%20viewBox='0%200%2026%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.6665%206H21.3332V8H4.6665V6ZM8.83317%2011H21.3332V13H8.83317V11ZM14.0415%2016H21.3332V18H14.0415V16Z'%20fill='%230B0500'/%3e%3c/svg%3e"></use>
-      </svg>
-    </button>
 
-    <!-- ------------- modal window=-------------- -->
-     <div class="menu hidden" data-menu>
-    <div class="container menu-container">
+      <ul class="header-nav-list">
+        <li><a class="header-nav-link" href="#home">Home</a></li>
+        <li><a class="header-nav-link" href="#books">Books</a></li>
+        <li><a class="header-nav-link" href="#feedbacks">Feedbacks</a></li>
+        <li><a class="header-nav-link" href="#events">Events</a></li>
+        <li><a class="header-nav-link" href="#location">Location</a></li>
+      </ul>
+
+      <button class="menu-open-btn" type="button" id="menuOpenBtn">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-menu-burger"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <div class="menu" id="mobileMenu">
+    <div class="menu-container">
       <div class="menu-header">
-          <a href="./index.html">
-        <img
-          class="logo-icon"
-          src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg"
-          alt="Booksy logo"
-        />
-      </a>
-        <button class="menu-close-btn" data-menu-close>
-          <svg class="menu-close-icon" width="32" height="32">
-            <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-x"></use>
+        <svg class="logo-icon" width="80" height="24">
+          <use href="./img/sprite.svg#logo"></use>
+        </svg>
+
+        <button class="menu-close-btn" type="button" id="menuCloseBtn">
+          <svg class="menu-close-icon" width="24" height="24">
+            <use href="./img/sprite.svg#close"></use>
           </svg>
         </button>
       </div>
+
       <nav class="menu-nav">
         <ul class="menu-nav-list">
-          <li class="nav-item">
-            <a class="header-nav-link" href="./index.htm">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-nav-link" href="##books">Books</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-nav-link" href="#events">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="header-nav-link" href="#location">Location</a>
-          </li>
+          <li><a class="menu-nav-link" href="#home">Home</a></li>
+          <li><a class="menu-nav-link" href="#books">Books</a></li>
+          <li><a class="menu-nav-link" href="#feedbacks">Feedbacks</a></li>
+          <li><a class="menu-nav-link" href="#events">Events</a></li>
+          <li><a class="menu-nav-link" href="#location">Location</a></li>
         </ul>
       </nav>
-      
     </div>
   </div>
 </header>
@@ -204,12 +180,12 @@
         <div class="swipe-btns">
           <button class="hero-left-btn">
             <svg class="hero-arrow" width="14px" height="14px">
-              <use href="/codeV1be-js/assets/hero-icons-DvUopQC4.svg#left-arrow-icon"></use>
+              <use href="./img/hero-icons.svg#left-arrow-icon"></use>
             </svg>
           </button>
           <button class="hero-right-btn">
             <svg class="hero-arrow" width="14px" height="14px">
-              <use href="/codeV1be-js/assets/hero-icons-DvUopQC4.svg#right-arrow-icon"></use>
+              <use href="./img/hero-icons.svg#right-arrow-icon"></use>
             </svg>
           </button>
         </div>
@@ -706,7 +682,7 @@
         <a href="./index.html" class="footer-logo">
           <img
             class="footer-logo-img"
-            src="/codeV1be-js/assets/footer-logo-CtSo4irx.svg"
+            src="./img/footer-logo.svg"
             alt="Booksy Logo"
           />
         </a>
