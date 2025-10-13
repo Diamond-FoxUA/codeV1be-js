@@ -51,10 +51,20 @@
 
 .form {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  align-items: flex-start; /* щоб кнопка не тягнула error вбік */
   gap: 12px;
   margin-bottom: 12px;
 }
+.input-wrap {
+  display: flex;
+  flex-direction: column; /* error під інпутом */
+  gap: 4px;
+  max-width: 221px; /* як у твого інпута */
+  width: 100%;
+}
+
+.input-wrap .join-input { width: 100%; }
 
 .join-input {
   border: 1px solid var(--opacity-neutral-darkest-15);
@@ -81,20 +91,62 @@
   color: transparent;
 }
 
+/* Button - normal */
 .join-btn {
   border: 1px solid var(--color-black);
   border-radius: 4px;
-  max-width: 106px;
-  width: 100%;
+  width: 106px;
   height: 48px;
   font-size: 16px;
   color: var(--color-black);
   background-color: inherit;
 }
-
 .join-btn:hover,
 .join-btn:focus {
-  background-color: var(--opacity-neutral-darkest-15);
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.join-btn:active {
+  background-color: var(--color-transparentDark-btn);
+  color: var(--color-black);
+}
+
+.join-btn:disabled {
+  background: var(--color-neutral-darkest);
+  opacity: 0.2;
+}
+
+/* Інпут невалідний (але не порожній) → червона рамка і текст */
+.join-input:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error-message);
+  color: var(--color-error-message);
+  /* caret-color:var(--color-error-message); колір курсора */
+}
+
+/* Коли знову валідний → повертаємо стандартні кольори */
+.join-input:valid {
+  border-color: var(--opacity-neutral-darkest-15);
+  color: var(--color-black);
+  box-shadow: none;
+}
+
+/* Неактивна кнопка (щоб було видно стан) */
+.join-btn:disabled {
+  background: var(--color-neutral-darkest);
+  opacity: 0.2;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* текст помилки під інпутом (початково прихований) */
+.join-error {
+  height: 18px; /* щоб не скакало при появі/зникненні */
+  display: none;
+  margin: 6px 0 0 0;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-error-message);
 }
 
 .required {
