@@ -8,11 +8,11 @@
     <script type="module" crossorigin src="/codeV1be-js/index.js"></script>
     <link rel="modulepreload" crossorigin href="/codeV1be-js/assets/vendor-DQb83OiD.js">
     <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-CK0kUnfb.css">
+    <link rel="stylesheet" crossorigin href="/codeV1be-js/assets/index-BBZ1B6B2.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container header-container">
     <nav class="header-nav">
       <a href="./index.html" class="logo">
         <img
@@ -23,29 +23,77 @@
       </a>
       
       <ul class="header-nav-list">
-        <li><a class="header-nav-link" href="./index.html">Home</a></li>
-        <li><a class="header-nav-link" href="#books">Books</a></li>
-        <li><a class="header-nav-link" href="#feedbacks">Feedbacks</a></li>
-        <li><a class="header-nav-link" href="#events">Events</a></li>
-        <li><a class="header-nav-link" href="#location">Location</a></li>
+        <li class="nav-item">
+          <a class="header-nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-nav-link" href="#books">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-nav-link" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="header-nav-link" href="#location">Location</a>
+        </li>
       </ul>
-
-      <button class="menu-open-btn" type="button" data-menu-open>
-        <svg class="menu-icon" width="24" height="24">
-          <use href="data:image/svg+xml,%3csvg%20width='26'%20height='24'%20viewBox='0%200%2026%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.6665%206H21.3332V8H4.6665V6ZM8.83317%2011H21.3332V13H8.83317V11ZM14.0415%2016H21.3332V18H14.0415V16Z'%20fill='%230B0500'/%3e%3c/svg%3e"></use>
-        </svg>
-      </button>
     </nav>
+    <button class="menu-open-btn" type="button" data-menu-open>
+      <svg class="menu-icon" width="24" height="24">
+        <use href="data:image/svg+xml,%3csvg%20width='26'%20height='24'%20viewBox='0%200%2026%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.6665%206H21.3332V8H4.6665V6ZM8.83317%2011H21.3332V13H8.83317V11ZM14.0415%2016H21.3332V18H14.0415V16Z'%20fill='%230B0500'/%3e%3c/svg%3e"></use>
+      </svg>
+    </button>
+
+    <!-- ------------- modal window=-------------- -->
+     <div class="menu" data-menu>
+    <div class="container menu-container">
+      <div class="menu-header">
+          <a href="./index.html">
+        <img
+          class="logo-icon"
+          src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg"
+          alt="Booksy logo"
+        />
+      </a>
+        <button class="menu-close-btn" data-menu-close>
+          <svg class="menu-close-icon" width="32" height="32">
+            <use href="/codeV1be-js/assets/icons-8K7jl38Q.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu-nav">
+        <ul class="menu-nav-list">
+          <li class="nav-item">
+            <a class="header-nav-link" href="./index.htm">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="header-nav-link" href="##books">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="header-nav-link" href="#feedbacks">Feedbacks</a>
+          </li>
+          <li class="nav-item">
+            <a class="header-nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="header-nav-link" href="#location">Location</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
   </div>
 </header>
 
-<div class="menu" hidden>
+<!-- <div class="menu" hidden>
   <div class="menu-container">
     <div class="menu-header">
       <a href="./index.html">
         <img
           class="logo-icon"
-          src="/codeV1be-js/assets/company-logo-D7ElgcbT.svg"
+          src="./img/icons/company-logo.svg"
           alt="Booksy logo"
         />
       </a>
@@ -78,7 +126,7 @@
       </ul>
     </nav>
   </div>
-</div>
+</div> -->
 
 
     <main>
