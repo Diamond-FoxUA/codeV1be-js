@@ -2,6 +2,7 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 // import { Scrollbar } from 'swiper/modules';
+import { openBookModal } from './books-modal.js';
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 const CATEGORY_LIST = '/books/category-list';
@@ -217,11 +218,7 @@ async function handleLearnMoreClick(event) {
     if (bookId) {
       try {
         const bookDetails = await serviceBookDetails(bookId);
-        alert(
-          `Book Title: ${bookDetails.title}\nAuthor: ${
-            bookDetails.author
-          }\nDescription: ${bookDetails.description.substring(0, 100)}...`
-        );
+        openBookModal(bookDetails);
       } catch (error) {
         alert('Failed to load book details. Please try again later.');
         console.error('Failed to show book details:', error);
