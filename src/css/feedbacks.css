@@ -10,13 +10,12 @@
 }
 
 /* Content */
-.swiper {
+#feedbacks-slider {
   margin-bottom: 32px;
   overflow: hidden;
 }
 /* Відгуки */
-.swiper-slide {
-  border: 1px solid var(--opacity-neutral-darkest-15);
+.swiper-slide-border {
   border-radius: 16px;
   padding: 32px 32px 102px 32px;
 }
@@ -134,8 +133,8 @@
     max-width: 768px;
     margin: 0 auto;
   }
-    .swiper-slide {
-    padding: 32px;;
+    .swiper-slide-border {
+    padding: 32px;
   }
 }
 

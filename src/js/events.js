@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import { openModal } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiperEl = document.querySelector('.events-swiper');
@@ -31,4 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     watchOverflow: true,
   });
+});
+
+// =================== modal open ===================
+
+const eventButtons = document.querySelectorAll('.event-btn');
+eventButtons.forEach(btn => {
+  btn.addEventListener('click', () => openModal(btn.dataset.event));
 });

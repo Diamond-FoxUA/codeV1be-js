@@ -1,8 +1,7 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-// import { Scrollbar } from 'swiper/modules';
-import { openBookModal } from './books-modal.js';
+import { openBookModal } from './book-modal.js';
 
 const BASE_URL = 'https://books-backend.p.goit.global';
 const CATEGORY_LIST = '/books/category-list';
@@ -209,7 +208,6 @@ async function handleCategoryClick(event) {
   refs.categoryToggleBtn.classList.remove('is-open');
 }
 
-//------------------- For modal window (Change alert to modal)-------------
 async function handleLearnMoreClick(event) {
   const learnMoreBtn = event.target.closest('.learn-more-btn');
   if (learnMoreBtn) {
@@ -226,7 +224,6 @@ async function handleLearnMoreClick(event) {
     }
   }
 }
-// ------------------------------------------------------------------------
 
 async function onShowMore() {
   refs.showMoreBtn.disabled = true;
@@ -276,7 +273,8 @@ async function initializeApp() {
   });
 }
 
-//--- Scrollbar---
+// --- Scrollbar ---
+
 const categoryList = refs.categoryListElement;
 const categoryThumb = document.querySelector(
   '.books-categories-scrollbar-thumb'
@@ -284,6 +282,7 @@ const categoryThumb = document.querySelector(
 
 function updateCategoryThumb() {
   const { scrollTop, scrollHeight, clientHeight } = categoryList;
+
   const ratio = clientHeight / scrollHeight;
   const thumbHeight = Math.max(ratio * clientHeight, 24);
   const maxTop = clientHeight - thumbHeight;
@@ -313,7 +312,6 @@ document.addEventListener('mousemove', e => {
 
   const { scrollHeight, clientHeight } = categoryList;
   const maxScroll = scrollHeight - clientHeight;
-
   const thumbHeight = categoryThumb.offsetHeight;
   const maxThumbTop = clientHeight - thumbHeight;
 
