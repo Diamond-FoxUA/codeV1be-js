@@ -35,18 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // =================== modal open ===================
 
-
 const backdrop = document.getElementById('modal-backdrop');
 
-
 function openModal(eventTitle) {
-
   let modal = document.querySelector('.modal');
   if (!modal) {
     modal = document.createElement('div');
     modal.classList.add('modal');
 
-  
     modal.innerHTML = `
             <button class="modal-close" aria-label="Close modal">&times;</button>
             <h2 class="modal-title">Register for Event</h2>
@@ -68,11 +64,9 @@ function openModal(eventTitle) {
     // Закриття по кнопці
     modal.querySelector('.modal-close').addEventListener('click', closeModal);
   } else {
-    
     modal.querySelector('.event-title').textContent = eventTitle;
   }
 
-  
   backdrop.classList.add('is-open');
   document.body.classList.add('no-scroll');
 
@@ -83,7 +77,6 @@ function openModal(eventTitle) {
   });
 }
 
-// Функція закриття
 function closeModal() {
   backdrop.classList.remove('is-open');
   document.body.classList.remove('no-scroll');
