@@ -46,7 +46,7 @@ export async function openBookModal(bookId) {
               <button class="ac-trigger">
                 Details
                 <svg class="accordion-icon" width="14" height="8">
-                  <use href="../src/img/icons-modal.svg#icon-down"></use>
+                  <use href="./img/icons-modal.svg#icon-down"></use>
                 </svg>
               </button>
             </h2>
@@ -60,7 +60,7 @@ export async function openBookModal(bookId) {
               <button class="ac-trigger">
                 Shipping
                 <svg class="accordion-icon" width="14" height="8">
-                  <use href="../src/img/icons-modal.svg#icon-down"></use>
+                  <use href="./img/icons-modal.svg#icon-down"></use>
                 </svg>
               </button>
             </h2>
@@ -74,7 +74,7 @@ export async function openBookModal(bookId) {
               <button class="ac-trigger">
                 Returns
                 <svg class="accordion-icon" width="14" height="8">
-                  <use href="../src/img/icons-modal.svg#icon-down"></use>
+                  <use href="./img/icons-modal.svg#icon-down"></use>
                 </svg>
               </button>
             </h2>
