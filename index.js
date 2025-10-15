@@ -94,7 +94,7 @@ import{S as j,N as Y,P as K,i as g,A as Q,a as F}from"./assets/vendor-BqCDThHa.j
     <div class="modal">
       <button type="button" class="modal-close" aria-label="Close modal">
         <svg width="16" height="16">
-         <use href="../img/icons.svg#icon-x"></use>
+         <use href="./img/icons.svg#icon-x"></use>
         </svg>
       </button>
       <h2 class="modal-title">Register</h2>
