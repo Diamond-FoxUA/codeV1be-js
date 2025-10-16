@@ -1,5 +1,8 @@
 const swiper = new Swiper('.hero-swiper', {
   loop: true,
+  autoplay: {
+    delay: 5000,
+  },
   speed: 400,
   slidesPerView: 1,
   keyboard: {
