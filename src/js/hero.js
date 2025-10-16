@@ -1,7 +1,10 @@
 const swiper = new Swiper('.hero-swiper', {
-  loop: false,
+  loop: true,
   speed: 400,
   slidesPerView: 1,
+  keyboard: {
+    enabled: true,   
+  },
   wrapperClass: 'hero-swiper-wrapper',
   slideClass: 'hero-slide',
   navigation: {
