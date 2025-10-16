@@ -1,7 +1,7 @@
 const swiper = new Swiper('.hero-swiper', {
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 8000,
   },
   speed: 400,
   slidesPerView: 1,
