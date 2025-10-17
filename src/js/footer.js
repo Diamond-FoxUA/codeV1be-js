@@ -1,3 +1,5 @@
+import iziToast from "izitoast";
+
 (function () {
   const container = document.querySelector('.form');
   if (!container) return;
@@ -38,6 +40,9 @@
       input.blur();
       btn.blur();
       console.log('Форма успішно відправлена!');
+      iziToast.success({
+        message: 'Registration success'
+      });
     }
   });
 
