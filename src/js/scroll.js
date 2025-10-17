@@ -1,3 +1,4 @@
+const iconPath = new URL('/img/icons.svg', import.meta.url).href;
 const scrollUpBtn = document.createElement('button');
 scrollUpBtn.id = 'scrollUp';
 scrollUpBtn.className = 'scroll-up';
