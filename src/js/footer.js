@@ -4,6 +4,7 @@
 
   const input = container.querySelector('.join-input');
   const btn = container.querySelector('.join-btn');
+
   if (!input || !btn) return;
 
   let wrap = input.closest('.input-wrap');
@@ -33,6 +34,10 @@
     } else {
       input.setAttribute('aria-invalid', 'false');
       wrap.classList.remove('validated');
+      input.value = '';
+      input.blur();
+      btn.blur();
+      console.log('Форма успішно відправлена!');
     }
   });
 
