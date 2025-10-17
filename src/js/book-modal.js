@@ -6,6 +6,8 @@ import 'izitoast/dist/css/iziToast.min.css';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+const iconPath = new URL('/img/icons.svg', import.meta.url).href;
+
 const BASE_URL = 'https://books-backend.p.goit.global';
 const BOOK_DETAILS_ENDPOINT = '/books/';
 
@@ -143,7 +145,7 @@ function renderBookDetails(book) {
         <form class="book-modal-order-form">
           <div class="quantity-selector">
             <button type="button" class="quantity-btn" data-action="decrement">-</button>
-            <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Number of books">
+            <input type="number" class="quantity-input" value="1" min="1" max="99" aria-label="Number of books" disabled>
             <button type="button" class="quantity-btn" data-action="increment">+</button>
           </div>
           <div class="book-modal-buttons">
@@ -160,7 +162,7 @@ function renderBookDetails(book) {
         <h3 class="ac-header">
           <button type="button" class="ac-trigger">Details
              <svg class="books-arrow-icon" width="24" height="24">
-               <use href="./img/icons.svg#icon-arrow-dwn"></use>
+               <use href="${iconPath}#icon-arrow-dwn"></use>
              </svg>
           </button>
         </h3>
@@ -175,7 +177,7 @@ function renderBookDetails(book) {
         <h3 class="ac-header">
           <button type="button" class="ac-trigger">Shipping
             <svg class="books-arrow-icon" width="24" height="24">
-               <use href="/img/icons.svg#icon-arrow-dwn"></use>
+               <use href="${iconPath}#icon-arrow-dwn"></use>
              </svg>
           </button>
         </h3>
@@ -188,7 +190,7 @@ function renderBookDetails(book) {
         <h3 class="ac-header">
           <button type="button" class="ac-trigger">Returns
             <svg class="books-arrow-icon" width="24" height="24">
-               <use href="/img/icons.svg#icon-arrow-dwn"></use>
+               <use href="${iconPath}#icon-arrow-dwn"></use>
              </svg>
           </button>
         </h3>
