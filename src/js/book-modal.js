@@ -217,9 +217,7 @@ function handleOrderFormClick(event) {
   const target = event.target;
   const quantityInput = refs.modalContent.querySelector('.quantity-input');
 
-  if (!quantityInput) {
-    return;
-  }
+  if (!quantityInput) return;
 
   let quantity = parseInt(quantityInput.value);
 
@@ -233,31 +231,37 @@ function handleOrderFormClick(event) {
   if (target.classList.contains('add-to-cart-btn')) {
     target.disabled = true;
 
-    try {
-      iziToast.success({
-        title: 'Success!',
-        message: `"${currentBookData.title}" (${quantity} pcs.) added to cart!`,
-        position: 'topRight',
-        timeout: 4000,
-      });
-    } catch (error) {
-      iziToast.error({
-        title: 'Error',
-        message: 'Could not add to cart.',
-        position: 'topRight',
-      });
-    } finally {
-      target.disabled = false;
-    }
+    (async () => {
+      try {
+        await new Promise(resolve => setTimeout(resolve, 4000));
+
+        iziToast.success({
+          title: 'Success!',
+          message: `"${currentBookData.title}" (${quantity} pcs.) added to cart!`,
+          position: 'topRight',
+          timeout: 4000,
+        });
+      } catch (error) {
+        iziToast.error({
+          title: 'Error',
+          message: 'Could not add to cart.',
+          position: 'topRight',
+        });
+      } finally {
+        target.disabled = false;
+      }
+    })();
   }
 }
 
 function handleBuyNowSubmit(event) {
   event.preventDefault();
+
   iziToast.success({
     message: 'Thank you for your purchase!',
     position: 'topRight',
     timeout: 4000,
   });
+
   closeBookModal();
 }
