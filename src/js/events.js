@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Keyboard} from 'swiper/modules';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiperEl = document.querySelector('.events-swiper');
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
 
     keyboard: {
-    enabled: true,   
+      enabled: true,
     },
 
     watchOverflow: true,
@@ -65,7 +65,6 @@ function openModal(eventTitle) {
         `;
     backdrop.appendChild(modal);
 
-    // Закриття по кнопці
     modal.querySelector('.modal-close').addEventListener('click', closeModal);
   } else {
     modal.querySelector('.event-title').textContent = eventTitle;

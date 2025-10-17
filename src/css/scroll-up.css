@@ -51,7 +51,7 @@
   animation: arrowPulse 1.5s infinite ease-in-out;
 }
 
-/* Анімація “пульсу” */
+/* ============ animation ============= */
 @keyframes arrowPulse {
   0%,
   100% {
