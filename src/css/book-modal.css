@@ -197,8 +197,17 @@
   border: 1px solid var(--color-black);
 }
 
-.buy-now-btn:hover {
+.buy-now-btn:hover,
+.buy-now-btn:focus {
   background-color: var(--color-orange-footer);
+}
+
+.buy-now-btn:active {
+  background-color: var(--color-transparentDark-btn);
+}
+
+.buy-now-btn:disabled {
+  opacity: 0.2;
 }
 
 /* Акордіон */
