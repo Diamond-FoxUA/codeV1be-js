@@ -3,7 +3,7 @@ scrollUpBtn.id = 'scrollUp';
 scrollUpBtn.className = 'scroll-up';
 scrollUpBtn.innerHTML = `
   <svg class="svg" width="30" height="30">
-    <use href="./img/icons.svg#icon-right-arrow-alt"></use>
+    <use href="${iconPath}#icon-right-arrow-alt"></use>
   </svg>
 `;
 
