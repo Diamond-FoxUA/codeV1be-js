@@ -1,9 +1,11 @@
+import iziToast from "izitoast";
+
 (function () {
   const container = document.querySelector('.form');
   if (!container) return;
 
   const input = container.querySelector('.join-input');
-  const btn   = container.querySelector('.join-btn');
+  const btn = container.querySelector('.join-btn');
   if (!input || !btn) return;
 
   let wrap = input.closest('.input-wrap');
@@ -22,7 +24,7 @@
     wrap.appendChild(err);
   }
 
-  btn.addEventListener('click', (e) => {
+  btn.addEventListener('click', e => {
     e.preventDefault();
     wrap.classList.add('validated');
 
@@ -33,6 +35,9 @@
     } else {
       input.setAttribute('aria-invalid', 'false');
       wrap.classList.remove('validated');
+      iziToast.success({
+        message: 'Registration success'
+      });
     }
   });
 
