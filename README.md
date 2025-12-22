@@ -58,9 +58,3 @@ Responsibilities:
 🌐 Live Demo: https://diamond-foxua.github.io/codeV1be-js/  
 🔗 Repository: https://github.com/Diamond-FoxUA/codeV1be-js  
 🎨 Figma Design: https://www.figma.com/design/Q8qeSuzKR9tcbh1Ez9jOX4/Booksy?node-id=5999-10563&p=f&t=ql3Okv2MNi6afREw-0
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
